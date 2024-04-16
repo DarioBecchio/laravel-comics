@@ -132,7 +132,7 @@ Route::get('/comics', function () {
         ]
     ];
     //dd($comics);
-    return view('guests.comics', compact($comics));
+    return view('guests.comics', compact('comics'));
 });
 Route::get('/movies', function () {
     return view('guests.movies');

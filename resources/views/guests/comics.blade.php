@@ -2,20 +2,22 @@
 
 @section('content')
 
-<h1>Comics page</h1>
+    <h1>Comics page</h1>
 
-<div class="container">
-    <div class="row">
-        @foreach ($comic as $comics)
+    <div class="container">
+        <div class="row">
+            @foreach ($comics as $comic)
+            <div class="col-4">
+                <img src="{{$comic['thumb']}}" alt="">
+                <div class="col-4">
+                    {{$comic['title']}}
+                </div>
+            </div>
+            
 
-        <div class="col-4">
-            {{$comic['title']}}
-
+            @endforeach
         </div>
-
-        @endforeach
     </div>
-</div>
 
 
 @endsection

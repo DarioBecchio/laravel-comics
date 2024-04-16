@@ -22,7 +22,7 @@
         
         <main>
 
-            @yeld('content')
+            @yield('content')
             
         </main>
 
