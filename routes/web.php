@@ -15,11 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('guests.welcome');
-});
+})->name('home');
 
 Route::get('/characters', function () {
     return view('guests.characters');
-});
+})->name('characters');
+
 Route::get('/comics', function () {
     $comics = [
         [
@@ -133,31 +134,39 @@ Route::get('/comics', function () {
     ];
     //dd($comics);
     return view('guests.comics', compact('comics'));
-});
+})->name('comics');
+
 Route::get('/movies', function () {
     return view('guests.movies');
-});
+})->name('movies');
+
 Route::get('/tv', function () {
     return view('guests.tv');
-});
+})->name('tv');
+
 Route::get('/games', function () {
     return view('guests.games');
-});
+})->name('games');
+
 Route::get('/collectibles', function () {
     return view('guests.collectibles');
-});
+})->name('collectibles');
+
 Route::get('/videos', function () {
     return view('guests.videos');
-});
+})->name('videos');
+
 Route::get('/fans', function () {
     return view('guests.fans');
-});
+})->name('fans');
+
 Route::get('/news', function () {
     return view('guests.news');
-});
-Route::get('/characters', function () {
+})->name('news');
+
+Route::get('/shops', function () {
     return view('guests.characters');
-});
+})->name('shops');
 
 
 ##Example
