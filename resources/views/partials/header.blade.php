@@ -1,4 +1,5 @@
     <header>
+        <section class="navbar">
             <img src="{{ Vite::asset('resources/images/dc-logo.png') }}">  
             <nav>
                 <a href="">CHARACTERS</a>
@@ -12,4 +13,8 @@
                 <a href="">NEWS</a>
                 <a href="">SHOP</a>
             </nav> 
+        </section>
+        <section class="jumbotron">           
+        </section>
+            
     </header>

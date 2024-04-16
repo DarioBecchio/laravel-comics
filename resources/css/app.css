@@ -43,9 +43,6 @@ body {
 /* #Region Header*/
 header {
     background-color: var(--dc-ligher);
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
 
     nav {
         display: flex;
@@ -60,6 +57,16 @@ header {
         }
     }
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.jumbotron {
+    background-image: url(../images/jumbotron.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
 /* #endRegion Header*/
 
 /* #Region Main*/
@@ -71,8 +78,20 @@ main {
 
 /*#Region Footer*/
 
+footer {
+    ul {
+        list-style: none;
+
+        & a {
+            text-decoration: none;
+        }
+    }
+}
+
 .top_footer {
-    background-image: url(../images/cta-icons.png);
+    background-image: url(../images/footer-bg.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .bottom_foooter {
