@@ -15,6 +15,29 @@
 body {
     font-family: "Open Sans", sans-serif;
 }
+
+.container {
+    width: 70%;
+    max-width: 1176px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.col {
+    width: auto;
+    flex-basis: auto;
+    padding: 1rem;
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+    padding: 1rem;
+}
 /* #EndRegion Common */
 
 /* #Region Header*/
@@ -45,3 +68,16 @@ main {
     background-color: var(--dc-darker);
 }
 /* #EndRegion Main*/
+
+/*#Region Footer*/
+
+.top_footer {
+    background-image: url(../images/cta-icons.png);
+}
+
+.bottom_foooter {
+    background-color: var(--dc-dgray);
+    display: flex;
+    justify-content: space-between;
+}
+/*#EndRegion Footer*/
