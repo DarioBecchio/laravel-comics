@@ -1,0 +1,47 @@
+/* #Region Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dc-ligher: #ffffff;
+    --dc-darker: #1c1c1c;
+    --dc-blue: #0282f9;
+    --dc-dgray: #303030;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+/* #EndRegion Common */
+
+/* #Region Header*/
+header {
+    background-color: var(--dc-ligher);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    nav {
+        display: flex;
+        gap: 0.25rem;
+        justify-content: center;
+
+        & a {
+            padding: 0.5rem;
+            text-decoration: none;
+            color: var(--dc-dgray);
+            font-weight: 600;
+        }
+    }
+}
+/* #endRegion Header*/
+
+/* #Region Main*/
+main {
+    min-height: 60vh;
+    background-color: var(--dc-darker);
+}
+/* #EndRegion Main*/
